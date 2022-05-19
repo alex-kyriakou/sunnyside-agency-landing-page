@@ -1,0 +1,703 @@
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.p-1 {
+  padding: .25rem;
+}
+
+.px-1 {
+  padding-inline: .25rem;
+}
+
+.py-1 {
+  padding-block: .25rem;
+}
+
+.pleft-1 {
+  padding-inline-start: .25rem;
+}
+
+.pright-1 {
+  padding-inline-end: .25rem;
+}
+
+.ptop-1 {
+  padding-block-start: .25rem;
+}
+
+.pbottom-1 {
+  padding-block-end: .25rem;
+}
+
+.m-1 {
+  margin: .25rem;
+}
+
+.mdir-1 {
+  margin-block: .25rem;
+  margin-inline: .25rem;
+}
+
+.p-2 {
+  padding: .5rem;
+}
+
+.px-2 {
+  padding-inline: .5rem;
+}
+
+.py-2 {
+  padding-block: .5rem;
+}
+
+.pleft-2 {
+  padding-inline-start: .5rem;
+}
+
+.pright-2 {
+  padding-inline-end: .5rem;
+}
+
+.ptop-2 {
+  padding-block-start: .5rem;
+}
+
+.pbottom-2 {
+  padding-block-end: .5rem;
+}
+
+.m-2 {
+  margin: .5rem;
+}
+
+.mdir-2 {
+  margin-block: .5rem;
+  margin-inline: .5rem;
+}
+
+.p-3 {
+  padding: .75rem;
+}
+
+.px-3 {
+  padding-inline: .75rem;
+}
+
+.py-3 {
+  padding-block: .75rem;
+}
+
+.pleft-3 {
+  padding-inline-start: .75rem;
+}
+
+.pright-3 {
+  padding-inline-end: .75rem;
+}
+
+.ptop-3 {
+  padding-block-start: .75rem;
+}
+
+.pbottom-3 {
+  padding-block-end: .75rem;
+}
+
+.m-3 {
+  margin: .75rem;
+}
+
+.mdir-3 {
+  margin-block: .75rem;
+  margin-inline: .75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.px-4 {
+  padding-inline: 1rem;
+}
+
+.py-4 {
+  padding-block: 1rem;
+}
+
+.pleft-4 {
+  padding-inline-start: 1rem;
+}
+
+.pright-4 {
+  padding-inline-end: 1rem;
+}
+
+.ptop-4 {
+  padding-block-start: 1rem;
+}
+
+.pbottom-4 {
+  padding-block-end: 1rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.mdir-4 {
+  margin-block: 1rem;
+  margin-inline: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.px-5 {
+  padding-inline: 1.25rem;
+}
+
+.py-5 {
+  padding-block: 1.25rem;
+}
+
+.pleft-5 {
+  padding-inline-start: 1.25rem;
+}
+
+.pright-5 {
+  padding-inline-end: 1.25rem;
+}
+
+.ptop-5 {
+  padding-block-start: 1.25rem;
+}
+
+.pbottom-5 {
+  padding-block-end: 1.25rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.mdir-5 {
+  margin-block: 1.25rem;
+  margin-inline: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-6 {
+  padding-inline: 1.5rem;
+}
+
+.py-6 {
+  padding-block: 1.5rem;
+}
+
+.pleft-6 {
+  padding-inline-start: 1.5rem;
+}
+
+.pright-6 {
+  padding-inline-end: 1.5rem;
+}
+
+.ptop-6 {
+  padding-block-start: 1.5rem;
+}
+
+.pbottom-6 {
+  padding-block-end: 1.5rem;
+}
+
+.m-6 {
+  margin: 1.5rem;
+}
+
+.mdir-6 {
+  margin-block: 1.5rem;
+  margin-inline: 1.5rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
+}
+
+.px-7 {
+  padding-inline: 1.75rem;
+}
+
+.py-7 {
+  padding-block: 1.75rem;
+}
+
+.pleft-7 {
+  padding-inline-start: 1.75rem;
+}
+
+.pright-7 {
+  padding-inline-end: 1.75rem;
+}
+
+.ptop-7 {
+  padding-block-start: 1.75rem;
+}
+
+.pbottom-7 {
+  padding-block-end: 1.75rem;
+}
+
+.m-7 {
+  margin: 1.75rem;
+}
+
+.mdir-7 {
+  margin-block: 1.75rem;
+  margin-inline: 1.75rem;
+}
+
+.p-8 {
+  padding: 1rem;
+}
+
+.px-8 {
+  padding-inline: 1rem;
+}
+
+.py-8 {
+  padding-block: 1rem;
+}
+
+.pleft-8 {
+  padding-inline-start: 1rem;
+}
+
+.pright-8 {
+  padding-inline-end: 1rem;
+}
+
+.ptop-8 {
+  padding-block-start: 1rem;
+}
+
+.pbottom-8 {
+  padding-block-end: 1rem;
+}
+
+.m-8 {
+  margin: 1rem;
+}
+
+.mdir-8 {
+  margin-block: 1rem;
+  margin-inline: 1rem;
+}
+
+.p-9 {
+  padding: 2.25rem;
+}
+
+.px-9 {
+  padding-inline: 2.25rem;
+}
+
+.py-9 {
+  padding-block: 2.25rem;
+}
+
+.pleft-9 {
+  padding-inline-start: 2.25rem;
+}
+
+.pright-9 {
+  padding-inline-end: 2.25rem;
+}
+
+.ptop-9 {
+  padding-block-start: 2.25rem;
+}
+
+.pbottom-9 {
+  padding-block-end: 2.25rem;
+}
+
+.m-9 {
+  margin: 2.25rem;
+}
+
+.mdir-9 {
+  margin-block: 2.25rem;
+  margin-inline: 2.25rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.px-10 {
+  padding-inline: 2.5rem;
+}
+
+.py-10 {
+  padding-block: 2.5rem;
+}
+
+.pleft-10 {
+  padding-inline-start: 2.5rem;
+}
+
+.pright-10 {
+  padding-inline-end: 2.5rem;
+}
+
+.ptop-10 {
+  padding-block-start: 2.5rem;
+}
+
+.pbottom-10 {
+  padding-block-end: 2.5rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
+}
+
+.mdir-10 {
+  margin-block: 2.5rem;
+  margin-inline: 2.5rem;
+}
+
+.p-11 {
+  padding: 2.75rem;
+}
+
+.px-11 {
+  padding-inline: 2.75rem;
+}
+
+.py-11 {
+  padding-block: 2.75rem;
+}
+
+.pleft-11 {
+  padding-inline-start: 2.75rem;
+}
+
+.pright-11 {
+  padding-inline-end: 2.75rem;
+}
+
+.ptop-11 {
+  padding-block-start: 2.75rem;
+}
+
+.pbottom-11 {
+  padding-block-end: 2.75rem;
+}
+
+.m-11 {
+  margin: 2.75rem;
+}
+
+.mdir-11 {
+  margin-block: 2.75rem;
+  margin-inline: 2.75rem;
+}
+
+.p-12 {
+  padding: 3rem;
+}
+
+.px-12 {
+  padding-inline: 3rem;
+}
+
+.py-12 {
+  padding-block: 3rem;
+}
+
+.pleft-12 {
+  padding-inline-start: 3rem;
+}
+
+.pright-12 {
+  padding-inline-end: 3rem;
+}
+
+.ptop-12 {
+  padding-block-start: 3rem;
+}
+
+.pbottom-12 {
+  padding-block-end: 3rem;
+}
+
+.m-12 {
+  margin: 3rem;
+}
+
+.mdir-12 {
+  margin-block: 3rem;
+  margin-inline: 3rem;
+}
+
+.p-13 {
+  padding: 3.25rem;
+}
+
+.px-13 {
+  padding-inline: 3.25rem;
+}
+
+.py-13 {
+  padding-block: 3.25rem;
+}
+
+.pleft-13 {
+  padding-inline-start: 3.25rem;
+}
+
+.pright-13 {
+  padding-inline-end: 3.25rem;
+}
+
+.ptop-13 {
+  padding-block-start: 3.25rem;
+}
+
+.pbottom-13 {
+  padding-block-end: 3.25rem;
+}
+
+.m-13 {
+  margin: 3.25rem;
+}
+
+.mdir-13 {
+  margin-block: 3.25rem;
+  margin-inline: 3.25rem;
+}
+
+.p-14 {
+  padding: 3.5rem;
+}
+
+.px-14 {
+  padding-inline: 3.5rem;
+}
+
+.py-14 {
+  padding-block: 3.5rem;
+}
+
+.pleft-14 {
+  padding-inline-start: 3.5rem;
+}
+
+.pright-14 {
+  padding-inline-end: 3.5rem;
+}
+
+.ptop-14 {
+  padding-block-start: 3.5rem;
+}
+
+.pbottom-14 {
+  padding-block-end: 3.5rem;
+}
+
+.m-14 {
+  margin: 3.5rem;
+}
+
+.mdir-14 {
+  margin-block: 3.5rem;
+  margin-inline: 3.5rem;
+}
+
+.p-15 {
+  padding: 3.75rem;
+}
+
+.px-15 {
+  padding-inline: 3.75rem;
+}
+
+.py-15 {
+  padding-block: 3.75rem;
+}
+
+.pleft-15 {
+  padding-inline-start: 3.75rem;
+}
+
+.pright-15 {
+  padding-inline-end: 3.75rem;
+}
+
+.ptop-15 {
+  padding-block-start: 3.75rem;
+}
+
+.pbottom-15 {
+  padding-block-end: 3.75rem;
+}
+
+.m-15 {
+  margin: 3.75rem;
+}
+
+.mdir-15 {
+  margin-block: 3.75rem;
+  margin-inline: 3.75rem;
+}
+
+.p-16 {
+  padding: 4rem;
+}
+
+.px-16 {
+  padding-inline: 4rem;
+}
+
+.py-16 {
+  padding-block: 4rem;
+}
+
+.pleft-16 {
+  padding-inline-start: 4rem;
+}
+
+.pright-16 {
+  padding-inline-end: 4rem;
+}
+
+.ptop-16 {
+  padding-block-start: 4rem;
+}
+
+.pbottom-16 {
+  padding-block-end: 4rem;
+}
+
+.m-16 {
+  margin: 4rem;
+}
+
+.mdir-16 {
+  margin-block: 4rem;
+  margin-inline: 4rem;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.bg-red {
+  background-color: #fe7867;
+}
+
+.text-red {
+  color: #fe7867;
+}
+
+.bg-yellow {
+  background-color: #fad400;
+}
+
+.text-yellow {
+  color: #fad400;
+}
+
+.bg-green--dark {
+  background-color: #25564b;
+}
+
+.text-green--dark {
+  color: #25564b;
+}
+
+.bg-blue {
+  background-color: #19536b;
+}
+
+.text-blue {
+  color: #19536b;
+}
+
+.bg-green--light {
+  background-color: #458c7e;
+}
+
+.text-green--light {
+  color: #458c7e;
+}
+
+.bg-neutral1 {
+  background-color: #23303e;
+}
+
+.text-neutral1 {
+  color: #23303e;
+}
+
+.bg-neutral2 {
+  background-color: #5a636c;
+}
+
+.text-neutral2 {
+  color: #5a636c;
+}
+
+.bg-neutral3 {
+  background-color: #818498;
+}
+
+.text-neutral3 {
+  color: #818498;
+}
+
+.bg-neutral4 {
+  background-color: #a7abae;
+}
+
+.text-neutral4 {
+  color: #a7abae;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-white {
+  color: #fff;
+}
+
+/*# sourceMappingURL=index.8353e49f.css.map */

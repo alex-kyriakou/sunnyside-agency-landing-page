@@ -1,0 +1,1140 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.px-1 {
+  padding-inline: 0.25rem;
+}
+
+.py-1 {
+  padding-block: 0.25rem;
+}
+
+.pleft-1 {
+  -webkit-padding-start: 0.25rem;
+          padding-inline-start: 0.25rem;
+}
+
+.pright-1 {
+  -webkit-padding-end: 0.25rem;
+          padding-inline-end: 0.25rem;
+}
+
+.ptop-1 {
+  -webkit-padding-before: 0.25rem;
+          padding-block-start: 0.25rem;
+}
+
+.pbottom-1 {
+  -webkit-padding-after: 0.25rem;
+          padding-block-end: 0.25rem;
+}
+
+.m-1 {
+  margin: 0.25rem;
+}
+
+.mdir-1 {
+  margin-inline: 0.25rem;
+}
+
+.mdir-1 {
+  margin-block: 0.25rem;
+}
+
+.mdir-1 {
+  -webkit-margin-start: 0.25rem;
+          margin-inline-start: 0.25rem;
+}
+
+.mdir-1 {
+  -webkit-margin-end: 0.25rem;
+          margin-inline-end: 0.25rem;
+}
+
+.mdir-1 {
+  -webkit-margin-before: 0.25rem;
+          margin-block-start: 0.25rem;
+}
+
+.mdir-1 {
+  -webkit-margin-after: 0.25rem;
+          margin-block-end: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.px-2 {
+  padding-inline: 0.5rem;
+}
+
+.py-2 {
+  padding-block: 0.5rem;
+}
+
+.pleft-2 {
+  -webkit-padding-start: 0.5rem;
+          padding-inline-start: 0.5rem;
+}
+
+.pright-2 {
+  -webkit-padding-end: 0.5rem;
+          padding-inline-end: 0.5rem;
+}
+
+.ptop-2 {
+  -webkit-padding-before: 0.5rem;
+          padding-block-start: 0.5rem;
+}
+
+.pbottom-2 {
+  -webkit-padding-after: 0.5rem;
+          padding-block-end: 0.5rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.mdir-2 {
+  margin-inline: 0.5rem;
+}
+
+.mdir-2 {
+  margin-block: 0.5rem;
+}
+
+.mdir-2 {
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
+}
+
+.mdir-2 {
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+
+.mdir-2 {
+  -webkit-margin-before: 0.5rem;
+          margin-block-start: 0.5rem;
+}
+
+.mdir-2 {
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.px-3 {
+  padding-inline: 0.75rem;
+}
+
+.py-3 {
+  padding-block: 0.75rem;
+}
+
+.pleft-3 {
+  -webkit-padding-start: 0.75rem;
+          padding-inline-start: 0.75rem;
+}
+
+.pright-3 {
+  -webkit-padding-end: 0.75rem;
+          padding-inline-end: 0.75rem;
+}
+
+.ptop-3 {
+  -webkit-padding-before: 0.75rem;
+          padding-block-start: 0.75rem;
+}
+
+.pbottom-3 {
+  -webkit-padding-after: 0.75rem;
+          padding-block-end: 0.75rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.mdir-3 {
+  margin-inline: 0.75rem;
+}
+
+.mdir-3 {
+  margin-block: 0.75rem;
+}
+
+.mdir-3 {
+  -webkit-margin-start: 0.75rem;
+          margin-inline-start: 0.75rem;
+}
+
+.mdir-3 {
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
+}
+
+.mdir-3 {
+  -webkit-margin-before: 0.75rem;
+          margin-block-start: 0.75rem;
+}
+
+.mdir-3 {
+  -webkit-margin-after: 0.75rem;
+          margin-block-end: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.px-4 {
+  padding-inline: 1rem;
+}
+
+.py-4 {
+  padding-block: 1rem;
+}
+
+.pleft-4 {
+  -webkit-padding-start: 1rem;
+          padding-inline-start: 1rem;
+}
+
+.pright-4 {
+  -webkit-padding-end: 1rem;
+          padding-inline-end: 1rem;
+}
+
+.ptop-4 {
+  -webkit-padding-before: 1rem;
+          padding-block-start: 1rem;
+}
+
+.pbottom-4 {
+  -webkit-padding-after: 1rem;
+          padding-block-end: 1rem;
+}
+
+.m-4 {
+  margin: 1rem;
+}
+
+.mdir-4 {
+  margin-inline: 1rem;
+}
+
+.mdir-4 {
+  margin-block: 1rem;
+}
+
+.mdir-4 {
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+}
+
+.mdir-4 {
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+
+.mdir-4 {
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+}
+
+.mdir-4 {
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.px-5 {
+  padding-inline: 1.25rem;
+}
+
+.py-5 {
+  padding-block: 1.25rem;
+}
+
+.pleft-5 {
+  -webkit-padding-start: 1.25rem;
+          padding-inline-start: 1.25rem;
+}
+
+.pright-5 {
+  -webkit-padding-end: 1.25rem;
+          padding-inline-end: 1.25rem;
+}
+
+.ptop-5 {
+  -webkit-padding-before: 1.25rem;
+          padding-block-start: 1.25rem;
+}
+
+.pbottom-5 {
+  -webkit-padding-after: 1.25rem;
+          padding-block-end: 1.25rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.mdir-5 {
+  margin-inline: 1.25rem;
+}
+
+.mdir-5 {
+  margin-block: 1.25rem;
+}
+
+.mdir-5 {
+  -webkit-margin-start: 1.25rem;
+          margin-inline-start: 1.25rem;
+}
+
+.mdir-5 {
+  -webkit-margin-end: 1.25rem;
+          margin-inline-end: 1.25rem;
+}
+
+.mdir-5 {
+  -webkit-margin-before: 1.25rem;
+          margin-block-start: 1.25rem;
+}
+
+.mdir-5 {
+  -webkit-margin-after: 1.25rem;
+          margin-block-end: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-6 {
+  padding-inline: 1.5rem;
+}
+
+.py-6 {
+  padding-block: 1.5rem;
+}
+
+.pleft-6 {
+  -webkit-padding-start: 1.5rem;
+          padding-inline-start: 1.5rem;
+}
+
+.pright-6 {
+  -webkit-padding-end: 1.5rem;
+          padding-inline-end: 1.5rem;
+}
+
+.ptop-6 {
+  -webkit-padding-before: 1.5rem;
+          padding-block-start: 1.5rem;
+}
+
+.pbottom-6 {
+  -webkit-padding-after: 1.5rem;
+          padding-block-end: 1.5rem;
+}
+
+.m-6 {
+  margin: 1.5rem;
+}
+
+.mdir-6 {
+  margin-inline: 1.5rem;
+}
+
+.mdir-6 {
+  margin-block: 1.5rem;
+}
+
+.mdir-6 {
+  -webkit-margin-start: 1.5rem;
+          margin-inline-start: 1.5rem;
+}
+
+.mdir-6 {
+  -webkit-margin-end: 1.5rem;
+          margin-inline-end: 1.5rem;
+}
+
+.mdir-6 {
+  -webkit-margin-before: 1.5rem;
+          margin-block-start: 1.5rem;
+}
+
+.mdir-6 {
+  -webkit-margin-after: 1.5rem;
+          margin-block-end: 1.5rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
+}
+
+.px-7 {
+  padding-inline: 1.75rem;
+}
+
+.py-7 {
+  padding-block: 1.75rem;
+}
+
+.pleft-7 {
+  -webkit-padding-start: 1.75rem;
+          padding-inline-start: 1.75rem;
+}
+
+.pright-7 {
+  -webkit-padding-end: 1.75rem;
+          padding-inline-end: 1.75rem;
+}
+
+.ptop-7 {
+  -webkit-padding-before: 1.75rem;
+          padding-block-start: 1.75rem;
+}
+
+.pbottom-7 {
+  -webkit-padding-after: 1.75rem;
+          padding-block-end: 1.75rem;
+}
+
+.m-7 {
+  margin: 1.75rem;
+}
+
+.mdir-7 {
+  margin-inline: 1.75rem;
+}
+
+.mdir-7 {
+  margin-block: 1.75rem;
+}
+
+.mdir-7 {
+  -webkit-margin-start: 1.75rem;
+          margin-inline-start: 1.75rem;
+}
+
+.mdir-7 {
+  -webkit-margin-end: 1.75rem;
+          margin-inline-end: 1.75rem;
+}
+
+.mdir-7 {
+  -webkit-margin-before: 1.75rem;
+          margin-block-start: 1.75rem;
+}
+
+.mdir-7 {
+  -webkit-margin-after: 1.75rem;
+          margin-block-end: 1.75rem;
+}
+
+.p-8 {
+  padding: 1rem;
+}
+
+.px-8 {
+  padding-inline: 1rem;
+}
+
+.py-8 {
+  padding-block: 1rem;
+}
+
+.pleft-8 {
+  -webkit-padding-start: 1rem;
+          padding-inline-start: 1rem;
+}
+
+.pright-8 {
+  -webkit-padding-end: 1rem;
+          padding-inline-end: 1rem;
+}
+
+.ptop-8 {
+  -webkit-padding-before: 1rem;
+          padding-block-start: 1rem;
+}
+
+.pbottom-8 {
+  -webkit-padding-after: 1rem;
+          padding-block-end: 1rem;
+}
+
+.m-8 {
+  margin: 1rem;
+}
+
+.mdir-8 {
+  margin-inline: 1rem;
+}
+
+.mdir-8 {
+  margin-block: 1rem;
+}
+
+.mdir-8 {
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+}
+
+.mdir-8 {
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+
+.mdir-8 {
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+}
+
+.mdir-8 {
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+
+.p-9 {
+  padding: 2.25rem;
+}
+
+.px-9 {
+  padding-inline: 2.25rem;
+}
+
+.py-9 {
+  padding-block: 2.25rem;
+}
+
+.pleft-9 {
+  -webkit-padding-start: 2.25rem;
+          padding-inline-start: 2.25rem;
+}
+
+.pright-9 {
+  -webkit-padding-end: 2.25rem;
+          padding-inline-end: 2.25rem;
+}
+
+.ptop-9 {
+  -webkit-padding-before: 2.25rem;
+          padding-block-start: 2.25rem;
+}
+
+.pbottom-9 {
+  -webkit-padding-after: 2.25rem;
+          padding-block-end: 2.25rem;
+}
+
+.m-9 {
+  margin: 2.25rem;
+}
+
+.mdir-9 {
+  margin-inline: 2.25rem;
+}
+
+.mdir-9 {
+  margin-block: 2.25rem;
+}
+
+.mdir-9 {
+  -webkit-margin-start: 2.25rem;
+          margin-inline-start: 2.25rem;
+}
+
+.mdir-9 {
+  -webkit-margin-end: 2.25rem;
+          margin-inline-end: 2.25rem;
+}
+
+.mdir-9 {
+  -webkit-margin-before: 2.25rem;
+          margin-block-start: 2.25rem;
+}
+
+.mdir-9 {
+  -webkit-margin-after: 2.25rem;
+          margin-block-end: 2.25rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.px-10 {
+  padding-inline: 2.5rem;
+}
+
+.py-10 {
+  padding-block: 2.5rem;
+}
+
+.pleft-10 {
+  -webkit-padding-start: 2.5rem;
+          padding-inline-start: 2.5rem;
+}
+
+.pright-10 {
+  -webkit-padding-end: 2.5rem;
+          padding-inline-end: 2.5rem;
+}
+
+.ptop-10 {
+  -webkit-padding-before: 2.5rem;
+          padding-block-start: 2.5rem;
+}
+
+.pbottom-10 {
+  -webkit-padding-after: 2.5rem;
+          padding-block-end: 2.5rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
+}
+
+.mdir-10 {
+  margin-inline: 2.5rem;
+}
+
+.mdir-10 {
+  margin-block: 2.5rem;
+}
+
+.mdir-10 {
+  -webkit-margin-start: 2.5rem;
+          margin-inline-start: 2.5rem;
+}
+
+.mdir-10 {
+  -webkit-margin-end: 2.5rem;
+          margin-inline-end: 2.5rem;
+}
+
+.mdir-10 {
+  -webkit-margin-before: 2.5rem;
+          margin-block-start: 2.5rem;
+}
+
+.mdir-10 {
+  -webkit-margin-after: 2.5rem;
+          margin-block-end: 2.5rem;
+}
+
+.p-11 {
+  padding: 2.75rem;
+}
+
+.px-11 {
+  padding-inline: 2.75rem;
+}
+
+.py-11 {
+  padding-block: 2.75rem;
+}
+
+.pleft-11 {
+  -webkit-padding-start: 2.75rem;
+          padding-inline-start: 2.75rem;
+}
+
+.pright-11 {
+  -webkit-padding-end: 2.75rem;
+          padding-inline-end: 2.75rem;
+}
+
+.ptop-11 {
+  -webkit-padding-before: 2.75rem;
+          padding-block-start: 2.75rem;
+}
+
+.pbottom-11 {
+  -webkit-padding-after: 2.75rem;
+          padding-block-end: 2.75rem;
+}
+
+.m-11 {
+  margin: 2.75rem;
+}
+
+.mdir-11 {
+  margin-inline: 2.75rem;
+}
+
+.mdir-11 {
+  margin-block: 2.75rem;
+}
+
+.mdir-11 {
+  -webkit-margin-start: 2.75rem;
+          margin-inline-start: 2.75rem;
+}
+
+.mdir-11 {
+  -webkit-margin-end: 2.75rem;
+          margin-inline-end: 2.75rem;
+}
+
+.mdir-11 {
+  -webkit-margin-before: 2.75rem;
+          margin-block-start: 2.75rem;
+}
+
+.mdir-11 {
+  -webkit-margin-after: 2.75rem;
+          margin-block-end: 2.75rem;
+}
+
+.p-12 {
+  padding: 3rem;
+}
+
+.px-12 {
+  padding-inline: 3rem;
+}
+
+.py-12 {
+  padding-block: 3rem;
+}
+
+.pleft-12 {
+  -webkit-padding-start: 3rem;
+          padding-inline-start: 3rem;
+}
+
+.pright-12 {
+  -webkit-padding-end: 3rem;
+          padding-inline-end: 3rem;
+}
+
+.ptop-12 {
+  -webkit-padding-before: 3rem;
+          padding-block-start: 3rem;
+}
+
+.pbottom-12 {
+  -webkit-padding-after: 3rem;
+          padding-block-end: 3rem;
+}
+
+.m-12 {
+  margin: 3rem;
+}
+
+.mdir-12 {
+  margin-inline: 3rem;
+}
+
+.mdir-12 {
+  margin-block: 3rem;
+}
+
+.mdir-12 {
+  -webkit-margin-start: 3rem;
+          margin-inline-start: 3rem;
+}
+
+.mdir-12 {
+  -webkit-margin-end: 3rem;
+          margin-inline-end: 3rem;
+}
+
+.mdir-12 {
+  -webkit-margin-before: 3rem;
+          margin-block-start: 3rem;
+}
+
+.mdir-12 {
+  -webkit-margin-after: 3rem;
+          margin-block-end: 3rem;
+}
+
+.p-13 {
+  padding: 3.25rem;
+}
+
+.px-13 {
+  padding-inline: 3.25rem;
+}
+
+.py-13 {
+  padding-block: 3.25rem;
+}
+
+.pleft-13 {
+  -webkit-padding-start: 3.25rem;
+          padding-inline-start: 3.25rem;
+}
+
+.pright-13 {
+  -webkit-padding-end: 3.25rem;
+          padding-inline-end: 3.25rem;
+}
+
+.ptop-13 {
+  -webkit-padding-before: 3.25rem;
+          padding-block-start: 3.25rem;
+}
+
+.pbottom-13 {
+  -webkit-padding-after: 3.25rem;
+          padding-block-end: 3.25rem;
+}
+
+.m-13 {
+  margin: 3.25rem;
+}
+
+.mdir-13 {
+  margin-inline: 3.25rem;
+}
+
+.mdir-13 {
+  margin-block: 3.25rem;
+}
+
+.mdir-13 {
+  -webkit-margin-start: 3.25rem;
+          margin-inline-start: 3.25rem;
+}
+
+.mdir-13 {
+  -webkit-margin-end: 3.25rem;
+          margin-inline-end: 3.25rem;
+}
+
+.mdir-13 {
+  -webkit-margin-before: 3.25rem;
+          margin-block-start: 3.25rem;
+}
+
+.mdir-13 {
+  -webkit-margin-after: 3.25rem;
+          margin-block-end: 3.25rem;
+}
+
+.p-14 {
+  padding: 3.5rem;
+}
+
+.px-14 {
+  padding-inline: 3.5rem;
+}
+
+.py-14 {
+  padding-block: 3.5rem;
+}
+
+.pleft-14 {
+  -webkit-padding-start: 3.5rem;
+          padding-inline-start: 3.5rem;
+}
+
+.pright-14 {
+  -webkit-padding-end: 3.5rem;
+          padding-inline-end: 3.5rem;
+}
+
+.ptop-14 {
+  -webkit-padding-before: 3.5rem;
+          padding-block-start: 3.5rem;
+}
+
+.pbottom-14 {
+  -webkit-padding-after: 3.5rem;
+          padding-block-end: 3.5rem;
+}
+
+.m-14 {
+  margin: 3.5rem;
+}
+
+.mdir-14 {
+  margin-inline: 3.5rem;
+}
+
+.mdir-14 {
+  margin-block: 3.5rem;
+}
+
+.mdir-14 {
+  -webkit-margin-start: 3.5rem;
+          margin-inline-start: 3.5rem;
+}
+
+.mdir-14 {
+  -webkit-margin-end: 3.5rem;
+          margin-inline-end: 3.5rem;
+}
+
+.mdir-14 {
+  -webkit-margin-before: 3.5rem;
+          margin-block-start: 3.5rem;
+}
+
+.mdir-14 {
+  -webkit-margin-after: 3.5rem;
+          margin-block-end: 3.5rem;
+}
+
+.p-15 {
+  padding: 3.75rem;
+}
+
+.px-15 {
+  padding-inline: 3.75rem;
+}
+
+.py-15 {
+  padding-block: 3.75rem;
+}
+
+.pleft-15 {
+  -webkit-padding-start: 3.75rem;
+          padding-inline-start: 3.75rem;
+}
+
+.pright-15 {
+  -webkit-padding-end: 3.75rem;
+          padding-inline-end: 3.75rem;
+}
+
+.ptop-15 {
+  -webkit-padding-before: 3.75rem;
+          padding-block-start: 3.75rem;
+}
+
+.pbottom-15 {
+  -webkit-padding-after: 3.75rem;
+          padding-block-end: 3.75rem;
+}
+
+.m-15 {
+  margin: 3.75rem;
+}
+
+.mdir-15 {
+  margin-inline: 3.75rem;
+}
+
+.mdir-15 {
+  margin-block: 3.75rem;
+}
+
+.mdir-15 {
+  -webkit-margin-start: 3.75rem;
+          margin-inline-start: 3.75rem;
+}
+
+.mdir-15 {
+  -webkit-margin-end: 3.75rem;
+          margin-inline-end: 3.75rem;
+}
+
+.mdir-15 {
+  -webkit-margin-before: 3.75rem;
+          margin-block-start: 3.75rem;
+}
+
+.mdir-15 {
+  -webkit-margin-after: 3.75rem;
+          margin-block-end: 3.75rem;
+}
+
+.p-16 {
+  padding: 4rem;
+}
+
+.px-16 {
+  padding-inline: 4rem;
+}
+
+.py-16 {
+  padding-block: 4rem;
+}
+
+.pleft-16 {
+  -webkit-padding-start: 4rem;
+          padding-inline-start: 4rem;
+}
+
+.pright-16 {
+  -webkit-padding-end: 4rem;
+          padding-inline-end: 4rem;
+}
+
+.ptop-16 {
+  -webkit-padding-before: 4rem;
+          padding-block-start: 4rem;
+}
+
+.pbottom-16 {
+  -webkit-padding-after: 4rem;
+          padding-block-end: 4rem;
+}
+
+.m-16 {
+  margin: 4rem;
+}
+
+.mdir-16 {
+  margin-inline: 4rem;
+}
+
+.mdir-16 {
+  margin-block: 4rem;
+}
+
+.mdir-16 {
+  -webkit-margin-start: 4rem;
+          margin-inline-start: 4rem;
+}
+
+.mdir-16 {
+  -webkit-margin-end: 4rem;
+          margin-inline-end: 4rem;
+}
+
+.mdir-16 {
+  -webkit-margin-before: 4rem;
+          margin-block-start: 4rem;
+}
+
+.mdir-16 {
+  -webkit-margin-after: 4rem;
+          margin-block-end: 4rem;
+}
+
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.bg-red {
+  background-color: #fe7867;
+}
+
+.text-red {
+  color: #fe7867;
+}
+
+.bg-yellow {
+  background-color: #fad400;
+}
+
+.text-yellow {
+  color: #fad400;
+}
+
+.bg-green--dark {
+  background-color: #25564b;
+}
+
+.text-green--dark {
+  color: #25564b;
+}
+
+.bg-blue {
+  background-color: #19536b;
+}
+
+.text-blue {
+  color: #19536b;
+}
+
+.bg-green--light {
+  background-color: #458c7e;
+}
+
+.text-green--light {
+  color: #458c7e;
+}
+
+.bg-neutral1 {
+  background-color: #23303e;
+}
+
+.text-neutral1 {
+  color: #23303e;
+}
+
+.bg-neutral2 {
+  background-color: #5a636c;
+}
+
+.text-neutral2 {
+  color: #5a636c;
+}
+
+.bg-neutral3 {
+  background-color: #818498;
+}
+
+.text-neutral3 {
+  color: #818498;
+}
+
+.bg-neutral4 {
+  background-color: #a7abae;
+}
+
+.text-neutral4 {
+  color: #a7abae;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.text-white {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

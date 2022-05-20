@@ -122,3 +122,18 @@ $colors: (
     }
   }
 }
+// ------------------------------------------------
+
+// Text Sizes
+$textSizes: (
+  "1": clamp(0.7rem, calc(0.81rem + -0.12vw), 0.78rem),
+  "2": clamp(0.94rem, calc(0.94rem + 0vw), 0.94rem),
+  "3": clamp(1.13rem, calc(1.08rem + 0.19vw), 1.25rem),
+  "4": clamp(1.35rem, calc(1.24rem + 0.48vw), 1.67rem),
+  "5": clamp(1.62rem, calc(1.41rem + 0.9vw), 2.22rem),
+  "6": clamp(1.94rem, calc(1.59rem + 1.53vw), 2.96rem),
+  "7": clamp(2.33rem, calc(1.76rem + 2.43vw), 3.95rem),
+  "8": clamp(2.8rem, calc(1.93rem + 3.7vw), 5.26rem),
+  "9": clamp(3.36rem, calc(2.07rem + 5.49vw), 7.01rem),
+  "10": clamp(4.03rem, calc(2.16rem + 7.99vw), 9.35rem),
+);

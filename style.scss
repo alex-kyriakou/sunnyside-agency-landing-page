@@ -8,6 +8,11 @@
 }
 // -------------------------------------------------
 
+// Font Families
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,700&display=swap");
+
 // Mixins
 @mixin minQuery($propertyName, $defaultValue, $mediaQueries: ()) {
   #{$propertyName}: #{$defaultValue};
@@ -57,6 +62,12 @@ $directions: (
 );
 
 @each $size, $sizeValue in $sizes {
+  .gap {
+    &-#{$size} {
+      gap: $sizeValue;
+    }
+  }
+
   .p {
     &-#{$size} {
       padding: $sizeValue;
@@ -94,6 +105,16 @@ $displays: block, none, inline, inline-block, flex, grid;
 
 // --------------------------------------------------------
 
+// Positions
+$positions: absolute, relative, fixed;
+
+@each $position in $positions {
+  .#{$position} {
+    position: #{$position};
+  }
+}
+// --------------------------------------------------------
+
 // Primary - Neutral Colors
 
 $colors: (
@@ -126,14 +147,91 @@ $colors: (
 
 // Text Sizes
 $textSizes: (
-  "1": clamp(0.7rem, calc(0.81rem + -0.12vw), 0.78rem),
-  "2": clamp(0.94rem, calc(0.94rem + 0vw), 0.94rem),
-  "3": clamp(1.13rem, calc(1.08rem + 0.19vw), 1.25rem),
-  "4": clamp(1.35rem, calc(1.24rem + 0.48vw), 1.67rem),
-  "5": clamp(1.62rem, calc(1.41rem + 0.9vw), 2.22rem),
-  "6": clamp(1.94rem, calc(1.59rem + 1.53vw), 2.96rem),
-  "7": clamp(2.33rem, calc(1.76rem + 2.43vw), 3.95rem),
-  "8": clamp(2.8rem, calc(1.93rem + 3.7vw), 5.26rem),
-  "9": clamp(3.36rem, calc(2.07rem + 5.49vw), 7.01rem),
-  "10": clamp(4.03rem, calc(2.16rem + 7.99vw), 9.35rem),
+  "sm": clamp(0.94rem, calc(0.94rem + 0vw), 0.94rem),
+  "md": clamp(1.35rem, calc(1.24rem + 0.48vw), 1.67rem),
+  "lg": clamp(1.62rem, calc(1.41rem + 0.9vw), 2.22rem),
+  "xl": clamp(2.33rem, calc(1.76rem + 2.43vw), 3.95rem),
+  "2xl": clamp(3.36rem, calc(2.07rem + 5.49vw), 7.01rem),
 );
+
+@each $textSize, $textValue in $textSizes {
+  .text {
+    &-#{$textSize} {
+      font-size: $textValue;
+    }
+  }
+}
+// -----------------------------------------
+// Flex Wrap
+.flex {
+  &-wrap {
+    flex-wrap: wrap;
+  }
+  &-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+// ------------------------------------------
+
+// Typography
+.text-center {
+  text-align: center;
+}
+
+.md:text-center {
+  @include minQuery(
+    text-align,
+    center,
+    (
+      $md: left,
+    )
+  );
+}
+
+// --------------------------------------------
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin-inline: auto;
+}
+
+.font-head {
+  font-family: "Fraunces", serif;
+}
+.font-body {
+  font-family: "Barlow", sans-serif;
+}
+
+// Nav
+nav {
+  width: 100%;
+  display: none;
+}
+
+// Header
+header {
+  @include minQuery(
+    background-image,
+    url(images/mobile/image-header.jpg),
+    (
+      $lg: url(images/desktop/image-header.jpg),
+    )
+  );
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.hero {
+  min-height: 100vh;
+  place-items: center;
+  place-content: center;
+
+  h1 {
+    // margin-bottom: 7rem;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+  }
+}

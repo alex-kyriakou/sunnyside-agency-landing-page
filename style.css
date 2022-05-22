@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,900;1,9..144,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
 *,
 *::after,
 *::before {
@@ -7,6 +7,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .gap-1 {
@@ -1246,18 +1247,24 @@
       flex-wrap: wrap-reverse;
 }
 
+.text-group {
+  place-items: center;
+  max-width: 40ch;
+}
+
 .text-center {
   text-align: center;
 }
 
-.md:text-center {
-  text-align: center;
-}
-
 @media (min-width: 800px) {
-  .md:text-center {
+  .md\:text-center {
     text-align: left;
   }
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .container {
@@ -1266,7 +1273,7 @@
   margin-inline: auto;
 }
 
-.font-head {
+.font-header {
   font-family: "Fraunces", serif;
 }
 
@@ -1302,5 +1309,23 @@ header {
 .hero h1 {
   text-transform: uppercase;
   letter-spacing: 8px;
+}
+
+.brand-img {
+  background-image: url(images/mobile/image-transform.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media (min-width: 1440px) {
+  .brand-img {
+    background-image: url(images/desktop/image-transform.jpg);
+  }
+}
+
+.aspect-square {
+  aspect-ratio: 1/1;
+  width: 100vw;
 }
 /*# sourceMappingURL=style.css.map */

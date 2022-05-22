@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap");
 *,
 *::after,
 *::before {
@@ -1237,6 +1237,14 @@
   font-size: clamp(3.36rem, calc(2.07rem + 5.49vw), 7.01rem);
 }
 
+@media (min-width: 800px) {
+  .flex-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+  }
+}
+
 .flex-wrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1265,6 +1273,37 @@
 img {
   max-width: 100%;
   display: block;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.link--yellow {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 3px 7px;
+  z-index: 1;
+}
+
+.link--yellow::before {
+  content: "";
+  position: absolute;
+  border: 4px solid rgba(250, 212, 0, 0.217);
+  border-radius: 8px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.link--yellow:hover::before {
+  border: 4px solid #fad400;
 }
 
 .container {
@@ -1327,5 +1366,17 @@ header {
 .aspect-square {
   aspect-ratio: 1/1;
   width: 100vw;
+}
+
+main .text-group {
+  margin: 0 auto;
+}
+
+main .text-group h2 {
+  font-weight: bolder;
+}
+
+main .text-group p {
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

@@ -209,6 +209,16 @@ $textSizes: (
 // }
 
 // --------------------------------------------
+// IMG Properties
+
+@mixin imgProperties {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  max-width: 100%;
+  display: block;
+}
 
 img {
   max-width: 100%;
@@ -244,6 +254,30 @@ img {
   }
 }
 
+.link--yellow {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 3px 7px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border: 4px solid rgba(254, 121, 103, 0.217);
+    border-radius: 8px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+  &:hover::before {
+    border: 4px solid rgba(254, 121, 103, 1);
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1350px;
@@ -272,9 +306,7 @@ header {
       $lg: url(images/desktop/image-header.jpg),
     )
   );
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  @include imgProperties();
   min-height: 100vh;
 }
 
@@ -291,24 +323,6 @@ header {
   }
 }
 
-.brand-img {
-  @include minQuery(
-    background-image,
-    url(images/mobile/image-transform.jpg),
-    (
-      $lg: url(images/desktop/image-transform.jpg),
-    )
-  );
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.aspect-square {
-  aspect-ratio: 1/1;
-  width: 100vw;
-}
-
 main {
   .text-group {
     margin: 0 auto;
@@ -319,4 +333,52 @@ main {
       line-height: 1.5;
     }
   }
+}
+
+// Image Ratio
+.aspect-square {
+  aspect-ratio: 1/1;
+  width: 100vw;
+}
+
+.aspect-height {
+  aspect-ratio: 1/1;
+  height: 100vh;
+  width: 100%;
+}
+
+// IMG Queries and Properties
+.brand-img {
+  @include minQuery(
+    background-image,
+    url(images/mobile/image-transform.jpg),
+    (
+      $lg: url(images/desktop/image-transform.jpg),
+    )
+  );
+  @include imgProperties();
+}
+
+.audience-img {
+  @include minQuery(
+    Background-image,
+    url(images/mobile/image-stand-out.jpg),
+    (
+      $lg: url(images/desktop/image-stand-out.jpg),
+    )
+  );
+
+  @include imgProperties();
+}
+
+.design-img {
+  @include minQuery(
+    background-image,
+    url(images/mobile/image-graphic-design.jpg),
+    (
+      $lg: url(images/desktop/image-graphic-design.jpg),
+    )
+  );
+
+  @include imgProperties();
 }

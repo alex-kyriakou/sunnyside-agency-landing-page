@@ -1306,6 +1306,32 @@ img {
   border: 4px solid #fad400;
 }
 
+.link--yellow {
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 3px 7px;
+  z-index: 1;
+}
+
+.link--yellow::before {
+  content: "";
+  position: absolute;
+  border: 4px solid rgba(254, 121, 103, 0.217);
+  border-radius: 8px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.link--yellow:hover::before {
+  border: 4px solid #fe7967;
+}
+
 .container {
   width: 100%;
   max-width: 1350px;
@@ -1327,9 +1353,11 @@ nav {
 
 header {
   background-image: url(images/mobile/image-header.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  max-width: 100%;
+  display: block;
   min-height: 100vh;
 }
 
@@ -1350,24 +1378,6 @@ header {
   letter-spacing: 8px;
 }
 
-.brand-img {
-  background-image: url(images/mobile/image-transform.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media (min-width: 1440px) {
-  .brand-img {
-    background-image: url(images/desktop/image-transform.jpg);
-  }
-}
-
-.aspect-square {
-  aspect-ratio: 1/1;
-  width: 100vw;
-}
-
 main .text-group {
   margin: 0 auto;
 }
@@ -1378,5 +1388,61 @@ main .text-group h2 {
 
 main .text-group p {
   line-height: 1.5;
+}
+
+.aspect-square {
+  aspect-ratio: 1/1;
+  width: 100vw;
+}
+
+.aspect-height {
+  aspect-ratio: 1/1;
+  height: 100vh;
+  width: 100%;
+}
+
+.brand-img {
+  background-image: url(images/mobile/image-transform.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100%;
+  display: block;
+}
+
+@media (min-width: 1440px) {
+  .brand-img {
+    background-image: url(images/desktop/image-transform.jpg);
+  }
+}
+
+.audience-img {
+  Background-image: url(images/mobile/image-stand-out.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100%;
+  display: block;
+}
+
+@media (min-width: 1440px) {
+  .audience-img {
+    Background-image: url(images/desktop/image-stand-out.jpg);
+  }
+}
+
+.design-img {
+  background-image: url(images/mobile/image-graphic-design.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100%;
+  display: block;
+}
+
+@media (min-width: 1440px) {
+  .design-img {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -51,6 +51,7 @@ $sizes: (
   "14": $base * 3.5,
   "15": $base * 3.75,
   "16": $base * 4,
+  "auto": auto,
 );
 
 $directions: (
@@ -165,9 +166,17 @@ $textSizes: (
 // -----------------------------------------
 // Flex Wrap
 
+.flex-child {
+  flex-grow: 1;
+}
+
 @media (min-width: $md) {
-  .flex-child {
-    flex: 1 1 40%;
+  .flex-child-2 {
+    flex-basis: 40%;
+  }
+
+  .flex-child-3 {
+    flex-basis: 28%;
   }
 }
 
@@ -190,10 +199,21 @@ $textSizes: (
 }
 
 // ------------------------------------------
-
 // Typography
 .text-center {
   text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letterspacing {
+  letter-spacing: 5px;
+}
+
+.lineheight {
+  line-height: 1.5;
 }
 
 @media (min-width: $md) {
@@ -214,6 +234,11 @@ $textSizes: (
 
 // --------------------------------------------
 // IMG Properties
+
+.profilePic {
+  max-width: 20vw;
+  border-radius: 50%;
+}
 
 @mixin imgProperties {
   background-size: cover;

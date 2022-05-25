@@ -254,6 +254,8 @@ img {
   display: block;
 }
 
+// --------------------------------------------------------
+// Links
 .link {
   text-decoration: none;
   text-transform: uppercase;
@@ -446,4 +448,63 @@ main {
     )
   );
   @include imgProperties();
+}
+
+.image {
+  @include imgProperties();
+  @include minQuery(
+    width,
+    50vw,
+    (
+      $md: 25vw,
+    )
+  );
+
+  @include minQuery(
+    aspect-ratio,
+    "1/1",
+    (
+      $md: "1/2",
+    )
+  );
+
+  &--1 {
+    @include minQuery(
+      background-image,
+      url("images/mobile/image-gallery-milkbottles.jpg"),
+      (
+        $lg: url("images/desktop/image-gallery-milkbottles.jpg"),
+      )
+    );
+  }
+
+  &--2 {
+    @include minQuery(
+      background-image,
+      url(images/mobile/image-gallery-orange.jpg),
+      (
+        $lg: url(images/desktop/image-gallery-orange.jpg),
+      )
+    );
+  }
+
+  &--3 {
+    @include minQuery(
+      background-image,
+      url(images/mobile/image-gallery-cone.jpg),
+      (
+        $lg: url(images/desktop/image-gallery-cone.jpg),
+      )
+    );
+  }
+
+  &--4 {
+    @include minQuery(
+      background-image,
+      url(images/mobile/image-gallery-sugar-cubes.jpg),
+      (
+        $lg: url(images/desktop/image-gallery-sugarcubes.jpg),
+      )
+    );
+  }
 }

@@ -1581,4 +1581,65 @@ main .text-group p {
     background-image: url(images/desktop/image-photography.jpg);
   }
 }
+
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 100%;
+  width: 50vw;
+  aspect-ratio: 1/1;
+}
+
+@media (min-width: 800px) {
+  .image {
+    width: 25vw;
+  }
+}
+
+@media (min-width: 800px) {
+  .image {
+    aspect-ratio: 1/2;
+  }
+}
+
+.image--1 {
+  background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+}
+
+@media (min-width: 1440px) {
+  .image--1 {
+    background-image: url("images/desktop/image-gallery-milkbottles.jpg");
+  }
+}
+
+.image--2 {
+  background-image: url(images/mobile/image-gallery-orange.jpg);
+}
+
+@media (min-width: 1440px) {
+  .image--2 {
+    background-image: url(images/desktop/image-gallery-orange.jpg);
+  }
+}
+
+.image--3 {
+  background-image: url(images/mobile/image-gallery-cone.jpg);
+}
+
+@media (min-width: 1440px) {
+  .image--3 {
+    background-image: url(images/desktop/image-gallery-cone.jpg);
+  }
+}
+
+.image--4 {
+  background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+}
+
+@media (min-width: 1440px) {
+  .image--4 {
+    background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+  }
+}
 /*# sourceMappingURL=style.css.map */

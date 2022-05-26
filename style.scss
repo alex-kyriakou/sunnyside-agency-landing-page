@@ -5,8 +5,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   overflow-x: hidden;
 }
+
 // -------------------------------------------------
 
 // Font Families
@@ -122,9 +126,9 @@ $positions: absolute, relative, fixed;
 $colors: (
   "red": hsl(7, 99%, 70%),
   "yellow": hsl(51, 100%, 49%),
-  "green--dark": hsl(167, 40%, 24%),
+  "green--dark": hsla(167, 40%, 24%, 0.729),
   "blue": hsl(198, 62%, 26%),
-  "green--light": hsl(168, 34%, 41%),
+  "green--light": hsl(167, 44%, 70%),
   "neutral1": hsl(212, 27%, 19%),
   "neutral2": hsl(213, 9%, 39%),
   "neutral3": hsl(232, 10%, 55%),
@@ -174,7 +178,6 @@ $textSizes: (
   .flex-child-2 {
     flex-basis: 40%;
   }
-
   .flex-child-3 {
     flex-basis: 28%;
   }
@@ -189,13 +192,14 @@ $textSizes: (
   }
 }
 
-.align-self-end {
-  align-self: flex-end;
+.align-items-end {
+  align-self: end;
+  align-items: end;
 }
 
 .text-group {
   place-items: center;
-  max-width: 40ch;
+  max-width: 50ch;
 }
 
 // ------------------------------------------
@@ -217,7 +221,7 @@ $textSizes: (
 }
 
 @media (min-width: $md) {
-  .md\:text-center {
+  .md\:text-left {
     text-align: left;
   }
 }
@@ -244,9 +248,6 @@ $textSizes: (
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-
-  max-width: 100%;
-  // display: block;
 }
 
 img {
@@ -285,7 +286,7 @@ img {
   }
 }
 
-.link--yellow {
+.link--red {
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
@@ -323,7 +324,7 @@ img {
 }
 
 // Nav
-nav {
+[aria-label="Main Navigation"] {
   width: 100%;
   display: none;
 }
@@ -437,6 +438,7 @@ main {
   );
   @include imgProperties();
 }
+
 [aria-labelledby="#photography"] {
   line-height: 1.75;
 
@@ -451,15 +453,6 @@ main {
 }
 
 .image {
-  @include imgProperties();
-  @include minQuery(
-    width,
-    50vw,
-    (
-      $md: 25vw,
-    )
-  );
-
   @include minQuery(
     aspect-ratio,
     "1/1",
@@ -467,44 +460,70 @@ main {
       $md: "1/2",
     )
   );
-
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @include minQuery(
+    width,
+    50vw,
+    (
+      $md: 25vw,
+    )
+  );
   &--1 {
     @include minQuery(
       background-image,
-      url("images/mobile/image-gallery-milkbottles.jpg"),
+      url("./images/mobile/image-gallery-milkbottles.jpg"),
       (
-        $lg: url("images/desktop/image-gallery-milkbottles.jpg"),
+        $lg: url("./images/desktop/image-gallery-milkbottles.jpg"),
       )
     );
   }
-
   &--2 {
     @include minQuery(
       background-image,
-      url(images/mobile/image-gallery-orange.jpg),
+      url("./images/mobile/image-gallery-orange.jpg"),
       (
-        $lg: url(images/desktop/image-gallery-orange.jpg),
+        $lg: url("./images/desktop/image-gallery-orange.jpg"),
       )
     );
   }
-
   &--3 {
     @include minQuery(
       background-image,
-      url(images/mobile/image-gallery-cone.jpg),
+      url("./images/mobile/image-gallery-cone.jpg"),
       (
-        $lg: url(images/desktop/image-gallery-cone.jpg),
+        $lg: url("./images/desktop/image-gallery-cone.jpg"),
       )
     );
   }
-
   &--4 {
     @include minQuery(
       background-image,
-      url(images/mobile/image-gallery-sugar-cubes.jpg),
+      url("./images/mobile/image-gallery-sugar-cubes.jpg"),
       (
-        $lg: url(images/desktop/image-gallery-sugarcubes.jpg),
+        $lg: url("./images/desktop/image-gallery-sugarcubes.jpg"),
       )
     );
   }
+}
+
+// Footer-------------------------------------------------
+.footer--nav {
+  place-items: center;
+}
+
+[role="menubar"] {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+[role="menuitem"] {
+  text-decoration: none;
+}
+
+.socials {
+  align-items: center;
 }

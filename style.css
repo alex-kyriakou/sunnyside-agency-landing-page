@@ -7,6 +7,9 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
   overflow-x: hidden;
 }
 
@@ -1222,11 +1225,11 @@
 }
 
 .bg-green--dark {
-  background-color: #25564b;
+  background-color: rgba(37, 86, 75, 0.729);
 }
 
 .text-green--dark {
-  color: #25564b;
+  color: rgba(37, 86, 75, 0.729);
 }
 
 .bg-blue {
@@ -1238,11 +1241,11 @@
 }
 
 .bg-green--light {
-  background-color: #458c7e;
+  background-color: #91d4c6;
 }
 
 .text-green--light {
-  color: #458c7e;
+  color: #91d4c6;
 }
 
 .bg-neutral1 {
@@ -1332,14 +1335,18 @@
       flex-wrap: wrap-reverse;
 }
 
-.align-self-end {
+.align-items-end {
   -ms-flex-item-align: end;
-      align-self: flex-end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .text-group {
   place-items: center;
-  max-width: 40ch;
+  max-width: 50ch;
 }
 
 .text-center {
@@ -1359,7 +1366,7 @@
 }
 
 @media (min-width: 800px) {
-  .md\:text-center {
+  .md\:text-left {
     text-align: left;
   }
 }
@@ -1405,7 +1412,7 @@ img {
   border: 4px solid #fad400;
 }
 
-.link--yellow {
+.link--red {
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
@@ -1413,7 +1420,7 @@ img {
   z-index: 1;
 }
 
-.link--yellow::before {
+.link--red::before {
   content: "";
   position: absolute;
   border: 4px solid rgba(254, 121, 103, 0.217);
@@ -1427,7 +1434,7 @@ img {
   transition: all 0.3s ease;
 }
 
-.link--yellow:hover::before {
+.link--red:hover::before {
   border: 4px solid #fe7967;
 }
 
@@ -1445,7 +1452,7 @@ img {
   font-family: "Barlow", sans-serif;
 }
 
-nav {
+[aria-label="Main Navigation"] {
   width: 100%;
   display: none;
 }
@@ -1455,7 +1462,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  max-width: 100%;
   min-height: 100vh;
 }
 
@@ -1515,7 +1521,6 @@ main .text-group p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  max-width: 100%;
 }
 
 @media (min-width: 1440px) {
@@ -1529,7 +1534,6 @@ main .text-group p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  max-width: 100%;
 }
 
 @media (min-width: 1440px) {
@@ -1543,7 +1547,6 @@ main .text-group p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  max-width: 100%;
 }
 
 @media (min-width: 1440px) {
@@ -1558,7 +1561,6 @@ main .text-group p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  max-width: 100%;
 }
 
 @media (min-width: 1440px) {
@@ -1573,7 +1575,6 @@ main .text-group p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  max-width: 100%;
 }
 
 @media (min-width: 1440px) {
@@ -1583,18 +1584,11 @@ main .text-group p {
 }
 
 .image {
-  background-size: cover;
+  aspect-ratio: 1/1;
   background-repeat: no-repeat;
   background-position: center center;
-  max-width: 100%;
+  background-size: cover;
   width: 50vw;
-  aspect-ratio: 1/1;
-}
-
-@media (min-width: 800px) {
-  .image {
-    width: 25vw;
-  }
 }
 
 @media (min-width: 800px) {
@@ -1603,43 +1597,70 @@ main .text-group p {
   }
 }
 
+@media (min-width: 800px) {
+  .image {
+    width: 25vw;
+  }
+}
+
 .image--1 {
-  background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+  background-image: url("./images/mobile/image-gallery-milkbottles.jpg");
 }
 
 @media (min-width: 1440px) {
   .image--1 {
-    background-image: url("images/desktop/image-gallery-milkbottles.jpg");
+    background-image: url("./images/desktop/image-gallery-milkbottles.jpg");
   }
 }
 
 .image--2 {
-  background-image: url(images/mobile/image-gallery-orange.jpg);
+  background-image: url("./images/mobile/image-gallery-orange.jpg");
 }
 
 @media (min-width: 1440px) {
   .image--2 {
-    background-image: url(images/desktop/image-gallery-orange.jpg);
+    background-image: url("./images/desktop/image-gallery-orange.jpg");
   }
 }
 
 .image--3 {
-  background-image: url(images/mobile/image-gallery-cone.jpg);
+  background-image: url("./images/mobile/image-gallery-cone.jpg");
 }
 
 @media (min-width: 1440px) {
   .image--3 {
-    background-image: url(images/desktop/image-gallery-cone.jpg);
+    background-image: url("./images/desktop/image-gallery-cone.jpg");
   }
 }
 
 .image--4 {
-  background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+  background-image: url("./images/mobile/image-gallery-sugar-cubes.jpg");
 }
 
 @media (min-width: 1440px) {
   .image--4 {
-    background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+    background-image: url("./images/desktop/image-gallery-sugarcubes.jpg");
   }
+}
+
+.footer--nav {
+  place-items: center;
+}
+
+[role="menubar"] {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+[role="menuitem"] {
+  text-decoration: none;
+}
+
+.socials {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

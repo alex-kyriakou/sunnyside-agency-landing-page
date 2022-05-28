@@ -10,7 +10,9 @@
 }
 
 body {
-  overflow-x: hidden;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .gap-1 {
@@ -1349,6 +1351,19 @@ body {
   max-width: 50ch;
 }
 
+.row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.col img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1454,7 +1469,54 @@ img {
 
 [aria-label="Main Navigation"] {
   width: 100%;
+}
+
+.btn-toggle {
   display: none;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3em;
+}
+
+[role="menubar"] {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+[role="menubar"] li:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+[role="menuitem"] {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.btn-contact {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 25px;
+  border-radius: 35px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.btn-contact:hover {
+  color: #fff;
+  background-color: #6eceff;
 }
 
 header {
@@ -1462,6 +1524,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-position: bottom;
   min-height: 100vh;
 }
 
@@ -1513,32 +1576,6 @@ main .text-group p {
 @media (min-width: 800px) {
   .aspect-dynamic {
     min-height: initial;
-  }
-}
-
-.brand-img {
-  background-image: url(images/mobile/image-transform.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media (min-width: 1440px) {
-  .brand-img {
-    background-image: url(images/desktop/image-transform.jpg);
-  }
-}
-
-.audience-img {
-  Background-image: url(images/mobile/image-stand-out.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-@media (min-width: 1440px) {
-  .audience-img {
-    Background-image: url(images/desktop/image-stand-out.jpg);
   }
 }
 
@@ -1645,17 +1682,6 @@ main .text-group p {
 
 .footer--nav {
   place-items: center;
-}
-
-[role="menubar"] {
-  list-style: none;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-[role="menuitem"] {
-  text-decoration: none;
 }
 
 .socials {

@@ -17,32 +17,38 @@
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body>
+    <!-- Nav Section Starts -->
     <nav class="fixed" aria-label="Main Navigation">
-      <div class="navbar container flex">
-        <a href="/" aria-label="Go home">
-          <img src="images/logo.svg" alt="logo Sunnyside" />
-        </a>
-        <div class="navbar--items">
-          <button aria-label="Open Menu">
-            <img src="images/icon-hamburger.svg" aria-hidden="true" />
-          </button>
-          <ul role="menubar">
+      <div class="navbar container">
+        <div class="logo">
+          <a href="/" aria-label="Go home">
+            <img src="images/logo.svg" alt="logo Sunnyside" />
+          </a>
+        </div>
+                 
+        <div class="navbar--items ">
+          <ul role="menubar" class="flex ">
             <li role="none">
-              <a href="/" class="text-green--dark" role="menuitem">About</a>
+              <a href="/"  role="menuitem">About</a>
             </li>
             <li role="none">
-              <a href="/" class="text-green--dark" role="menuitem">Services</a>
+              <a href="/"  role="menuitem">Services</a>
             </li>
             <li role="none">
-              <a href="/" class="text-green--dark" role="menuitem">Projects</a>
+              <a href="/"  role="menuitem">Projects</a>
             </li>
             <li role="none">
-              <a href="/" class="text-green--dark" class="btn" role="menuitem">Contant</a>
+              <a href="/"  class="btn-contact text-green--dark" role="menuitem">Contant</a>
             </li>
           </ul>
+
+          <button class="btn-toggle" aria-label="Open Menu">
+            <img  src="images/icon-hamburger.svg" aria-hidden="true" />
+          </button> 
         </div>
       </div>
     </nav>
+    <!-- Nav Section Ends -->
     <header>
       <div class="hero grid gap-16 text-center">
         <h1 class="text-xl text-white font-header">We are creatives</h1>
@@ -53,36 +59,37 @@
         />
       </div>
     </header>
+    <!-- Brand Section Starts -->
     <main class="text-center font-body text-neutral3 text-sm">
-      <!-- Brand Section Starts -->
-      <section aria-labelledby="#brand">
-        <div class="flex flex-wrap-reverse">
-          <div class="flex-child flex-child-2 text-group grid gap-6 py-12 px-4 md:text-left">
+      <section aria-labelledby="#brand" class="row">
+        <div class=" col col-1 ">
+          <div class="box  text-group grid gap-6 py-12 px-4 md:text-left">
             <h2 id="brand" class="text-xl text-neutral1 font-header">Transform your brand</h2>
             <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling
             visuals that do most of the marketing for you.</p>
             <a class="link link--yellow text-md font-header text-neutral1" href="#">Learn more</a>
           </div>
-          <div class="flex-child flex-child-2 brand aspect-square brand-img">
         </div>
+          <div class="col col-2  ">
+            <img src="images/desktop/image-transform.jpg" alt="" class="  brand aspect-dynamic  brand-img">
       </section>
       <!-- Brand Section Ends -->
       <!-- Audience Section Starts -->
-      <section aria-labelledby="#audience">
-        <div class="flex flex-wrap">
-          <div class="flex-child flex-child-2 text-group grid gap-6 py-12 px-4 md:text-left">
-            <h2 id="audience" class="text-xl text-neutral1 font-header">Stand out to the right audience</h2>
-            <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and
-            extend your brand in digital places.</p>
-            <a class="link link--red text-md font-header text-neutral1" href="#">Learn more</a>
+      <section aria-labelledby="#audience" class="row">
+        <div class=" col col-1 ">
+          <div class="box  text-group grid gap-6 py-12 px-4 md:text-left">
+            <h2 id="brand" class="text-xl text-neutral1 font-header">Stand out to the right audience</h2>
+            <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+            <a class="link link--yellow text-md font-header text-neutral1" href="#">Learn more</a>
           </div>
-          <div class="flex-child flex-child-2 audience aspect-square audience-img">
         </div>
+          <div class="col col-2  "> 
+            <img src="images/desktop/image-stand-out.jpg" alt="" class="brand aspect-dynamic  audience-img">
       </section>
       <!-- Audience section Ends -->
       <!-- Graphic Design Section Starts -->
-      <div class="flex flex-wrap">
       <section class="flex-child flex-child-2 aspect-dynamic grid text-green--dark py-12 px-4" aria-labelledby="#design">
+        
         <div class="grid gap-6 align-items-end">
         <h2 id="design" class="text-lg font-header">Graphic design</h2>
         <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’

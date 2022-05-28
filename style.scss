@@ -270,7 +270,6 @@ $textSizes: (
 
 img {
   max-width: 100%;
-
   display: block;
 }
 
@@ -347,7 +346,15 @@ img {
   width: 100%;
 }
 
+.toggle {
+  height: auto !important;
+}
+
 .btn-toggle {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
   display: none;
 }
 
@@ -431,26 +438,43 @@ main {
 }
 
 // Image Ratio
-.aspect-square {
-  aspect-ratio: 1/1;
-  width: 100vw;
-}
+// .aspect-square {
+//   aspect-ratio: 1/1;
+//   width: 100vw;
+// }
 
-.aspect-dynamic {
-  @include minQuery(
-    aspect-ratio,
-    initial,
-    (
-      $md: "1/1",
-    )
-  );
-  @include minQuery(
-    min-height,
-    100vh,
-    (
-      $md: initial,
-    )
-  );
+// .aspect-dynamic {
+//   @include minQuery(
+//     aspect-ratio,
+//     initial,
+//     (
+//       $md: "1/1",
+//     )
+//   );
+//   @include minQuery(
+//     min-height,
+//     100vh,
+//     (
+//       $md: initial,
+//     )
+//   );
+// }
+
+.card {
+  position: relative;
+}
+.card .card-content {
+  position: absolute;
+  top: 70%;
+  text-align: center;
+  max-width: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #1f5449;
+}
+.card-content h3 {
+  font-size: 34px;
+  margin-bottom: 30px;
 }
 
 // IMG Queries and Properties
@@ -477,43 +501,43 @@ main {
 //   @include imgProperties();
 // }
 
-.design-img {
-  @include minQuery(
-    background-image,
-    url(images/mobile/image-graphic-design.jpg),
-    (
-      $lg: url(images/desktop/image-graphic-design.jpg),
-    )
-  );
+// .design-img {
+//   @include minQuery(
+//     background-image,
+//     url(images/mobile/image-graphic-design.jpg),
+//     (
+//       $lg: url(images/desktop/image-graphic-design.jpg),
+//     )
+//   );
 
-  @include imgProperties();
-}
+//   @include imgProperties();
+// }
 
-[aria-labelledby="#design"] {
-  line-height: 1.75;
+// [aria-labelledby="#design"] {
+//   line-height: 1.75;
 
-  @include minQuery(
-    background-image,
-    url(images/mobile/image-graphic-design.jpg),
-    (
-      $lg: url(images/desktop/image-graphic-design.jpg),
-    )
-  );
-  @include imgProperties();
-}
+//   @include minQuery(
+//     background-image,
+//     url(images/mobile/image-graphic-design.jpg),
+//     (
+//       $lg: url(images/desktop/image-graphic-design.jpg),
+//     )
+//   );
+//   @include imgProperties();
+// }
 
-[aria-labelledby="#photography"] {
-  line-height: 1.75;
+// [aria-labelledby="#photography"] {
+//   line-height: 1.75;
 
-  @include minQuery(
-    background-image,
-    url(images/mobile/image-photography.jpg),
-    (
-      $lg: url(images/desktop/image-photography.jpg),
-    )
-  );
-  @include imgProperties();
-}
+//   @include minQuery(
+//     background-image,
+//     url(images/mobile/image-photography.jpg),
+//     (
+//       $lg: url(images/desktop/image-photography.jpg),
+//     )
+//   );
+//   @include imgProperties();
+// }
 
 .image {
   @include minQuery(
@@ -578,4 +602,76 @@ main {
 
 .socials {
   align-items: center;
+}
+
+// Media queries--------------------------------------------
+@media only screen and (max-width: 1020px) {
+  .box {
+    padding: 60px;
+  }
+
+  .card-content h2 {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-toggle {
+    display: inline-block;
+  }
+
+  [role="menubar"] {
+    display: none;
+  }
+
+  .nav-bar {
+    position: relative;
+  }
+
+  .nav {
+    position: absolute;
+    width: 100%;
+    background-color: #00aaff;
+    left: 0;
+    top: 100px;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .nav ul li {
+    display: block;
+    padding: 20px 0;
+  }
+  .nav ul li:not(:last-child) {
+    margin-right: 0;
+  }
+  .row {
+    grid-template-columns: 1fr;
+  }
+  .col-2 {
+    order: -1;
+  }
+  .box {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .nav-bar {
+    padding: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .box {
+    padding: 40px;
+  }
+
+  .box h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
 }

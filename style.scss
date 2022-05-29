@@ -348,7 +348,7 @@ img {
 
 nav {
   &.shrink {
-    height: 8rem;
+    height: auto;
     // background-origin: rgb(61, 190, 255);
     background: rgba(101, 167, 180, 0.461);
     overflow: hidden;
@@ -645,13 +645,14 @@ main {
 
   [role="menubar"] {
     display: none;
+    z-index: 2000;
   }
 
   .nav-bar {
     position: relative;
   }
 
-  .nav.toggle {
+  .toggle {
     position: absolute;
     width: 100%;
     background-color: #00aaff;
@@ -664,6 +665,7 @@ main {
     border-radius: 10px;
     margin: 0 auto;
     width: 30vw;
+    z-index: 4000;
 
     .btn-contact {
       background-color: hsl(51, 100%, 49%);
@@ -674,6 +676,7 @@ main {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
       li {
         padding: 20px 0;
 

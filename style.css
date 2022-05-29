@@ -1472,7 +1472,7 @@ img {
 }
 
 nav.shrink {
-  height: 8rem;
+  height: auto;
   background: rgba(101, 167, 180, 0.461);
   overflow: hidden;
   backdrop-filter: blur(50px);
@@ -1689,11 +1689,12 @@ main .text-group p {
   }
   [role="menubar"] {
     display: none;
+    z-index: 2000;
   }
   .nav-bar {
     position: relative;
   }
-  .nav.toggle {
+  .toggle {
     position: absolute;
     width: 100%;
     background-color: #00aaff;
@@ -1706,11 +1707,12 @@ main .text-group p {
     border-radius: 10px;
     margin: 0 auto;
     width: 30vw;
+    z-index: 4000;
   }
-  .nav.toggle .btn-contact {
+  .toggle .btn-contact {
     background-color: #fad400;
   }
-  .nav.toggle ul {
+  .toggle ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1725,13 +1727,13 @@ main .text-group p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .nav.toggle ul li {
+  .toggle ul li {
     padding: 20px 0;
   }
-  .nav.toggle ul li:not(:last-child) {
+  .toggle ul li:not(:last-child) {
     margin-right: 0;
   }
-  .nav.toggle ul li:last-child {
+  .toggle ul li:last-child {
     margin-bottom: 1rem;
   }
   .row {

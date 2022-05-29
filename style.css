@@ -1471,6 +1471,16 @@ img {
   width: 100%;
 }
 
+nav.shrink {
+  height: 8rem;
+  background: rgba(101, 167, 180, 0.461);
+  overflow: hidden;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(3px);
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .toggle {
   height: auto !important;
 }
@@ -1483,7 +1493,7 @@ img {
   display: none;
 }
 
-.navbar {
+.nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1567,6 +1577,7 @@ main .text-group p {
 
 .card {
   position: relative;
+  z-index: -99;
 }
 
 .card .card-content {
@@ -1649,6 +1660,14 @@ main .text-group p {
   place-items: center;
 }
 
+.footer--nav [aria-label="Secondary-Nav"] li a {
+  color: rgba(37, 86, 75, 0.729);
+}
+
+.footer--nav [aria-label="Secondary-Nav"] li a:hover {
+  color: #fff;
+}
+
 .socials {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1674,22 +1693,46 @@ main .text-group p {
   .nav-bar {
     position: relative;
   }
-  .nav {
+  .nav.toggle {
     position: absolute;
     width: 100%;
     background-color: #00aaff;
     left: 0;
+    right: 0;
     top: 100px;
     height: 0;
     overflow: hidden;
     text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 30vw;
   }
-  .nav ul li {
-    display: block;
+  .nav.toggle .btn-contact {
+    background-color: #fad400;
+  }
+  .nav.toggle ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav.toggle ul li {
     padding: 20px 0;
   }
-  .nav ul li:not(:last-child) {
+  .nav.toggle ul li:not(:last-child) {
     margin-right: 0;
+  }
+  .nav.toggle ul li:last-child {
+    margin-bottom: 1rem;
   }
   .row {
     -ms-grid-columns: 1fr;

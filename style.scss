@@ -346,6 +346,18 @@ img {
   width: 100%;
 }
 
+nav {
+  &.shrink {
+    height: 8rem;
+    // background-origin: rgb(61, 190, 255);
+    background: rgba(101, 167, 180, 0.461);
+    overflow: hidden;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(3px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+}
+
 .toggle {
   height: auto !important;
 }
@@ -358,7 +370,7 @@ img {
   display: none;
 }
 
-.navbar {
+.nav-bar {
   display: flex;
   justify-content: space-between;
   padding: 3em;
@@ -462,6 +474,7 @@ main {
 
 .card {
   position: relative;
+  z-index: -99;
 }
 .card .card-content {
   position: absolute;
@@ -598,6 +611,16 @@ main {
 // Footer-------------------------------------------------
 .footer--nav {
   place-items: center;
+
+  [aria-label="Secondary-Nav"] {
+    li a {
+      color: hsla(167, 40%, 24%, 0.729);
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
 }
 
 .socials {
@@ -628,24 +651,43 @@ main {
     position: relative;
   }
 
-  .nav {
+  .nav.toggle {
     position: absolute;
     width: 100%;
     background-color: #00aaff;
     left: 0;
+    right: 0;
     top: 100px;
     height: 0;
     overflow: hidden;
     text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 30vw;
+
+    .btn-contact {
+      background-color: hsl(51, 100%, 49%);
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      li {
+        padding: 20px 0;
+
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 1rem;
+        }
+      }
+    }
   }
 
-  .nav ul li {
-    display: block;
-    padding: 20px 0;
-  }
-  .nav ul li:not(:last-child) {
-    margin-right: 0;
-  }
   .row {
     grid-template-columns: 1fr;
   }
